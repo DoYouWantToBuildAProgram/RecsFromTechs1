@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background = "#B2EBF2"
+    android:background = "#E3F2FD"
     android:orientation="vertical">
 
     <!--this is our xml file
@@ -20,55 +20,53 @@
     https://www.google.com/design/spec/style/color.html#color-color-palette
     -->
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <!-- TextView is just plain text -->
+    <!-- TextView is just plain text -->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Login To "
-                android:id="@+id/textView"
-                android:textSize="23dp"
-                android:textColor="#00838F"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_weight="1"
-                 />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recs from Techs"
-                android:id="@+id/textView2"
-                android:textSize="30dp"
-                android:textColor="#006064"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_weight="2"
-                 />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login To "
+        android:id="@+id/textView"
+        android:textSize="27dp"
+        android:textColor="#00838F"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recs from Techs"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:textColor="#006064"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_gravity="right"
+        android:gravity="center"
+
+        />
 
 
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="username: "
-                android:id="@+id/textView3"
-                android:textSize="23dp"
-                android:textColor="#00838F"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_weight="1"
-                />
 
-            <!--EditText is a text box the user can enter data into -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username: "
+            android:id="@+id/textView3"
+            android:textSize="23dp"
+            android:textColor="#00838F"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="1"
+            />
+
+        <!--EditText is a text box the user can enter data into -->
 
         <EditText
             android:layout_width="wrap_content"
@@ -76,45 +74,45 @@
             android:id="@+id/username"
             android:layout_weight="1"
             android:hint="your username"
-        />
+            />
     </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="password: "
-                android:id="@+id/textView4"
-                android:textSize="23dp"
-                android:textColor="#00838F"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_weight="1"
-                />
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/password"
-                android:hint="your password"
-                android:inputType="textPassword"
-                android:layout_weight="1"
-                />
-        </LinearLayout>
-        <Button
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="37dp"
-            android:text="Login"
-            android:id="@+id/button"
-            android:gravity="center"
-            android:layout_gravity="right"
-            android:onClick="login"
-            android:background="#006064"
-            android:textColor="#E0F7FA"
-     />
-
-
-
-
-
+            android:layout_height="wrap_content"
+            android:text="password: "
+            android:id="@+id/textView4"
+            android:textSize="23dp"
+            android:textColor="#00838F"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="your password"
+            android:inputType="textPassword"
+            android:layout_weight="1"
+            />
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:text="Login"
+        android:id="@+id/button"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:onClick="login"
+        android:background="#006064"
+        android:textColor="#E0F7FA"
+        />
+
+
+
+
+
+</LinearLayout>
