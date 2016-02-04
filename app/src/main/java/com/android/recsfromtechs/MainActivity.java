@@ -27,6 +27,7 @@ public class MainActivity extends ActionBarActivity {
 
         //initializing our usernames map
         usernames = new HashMap<String,String>();
+
         //hardcoding a username and password for now because we don't have a registration page
         usernames.put("bob","password");
 
@@ -59,11 +60,15 @@ public class MainActivity extends ActionBarActivity {
     //essentially acts as an onclick listener, but this is done through xml and easier to write
     //if you go into activity_main.xml and look under the button
     // you'll see android:onClick="login"
-    //that means whenever the button is clicked it will call "login" which I've defined here
+    //that means whenever the button is clicked it will call login(View view),
     public void login(View view){
+
         //first we need to find the text that was entered
         // findViewById(R.id.idnamehere) is something we're going to use a lot
         //it connects the objects in our xml file to objects in our java file
+        //EditText is the text box
+        //to convert to string you have to call editText.toText().toString()
+
         EditText usernameText = (EditText) findViewById(R.id.username);
         EditText passwordText = (EditText) findViewById(R.id.password);
 
@@ -77,7 +82,7 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-            //Toasts! a funny name, theyre just little popups
+            //Toasts! weird name, theyre just in-app notifications
             //Since we dont have a second page right now, we can use this to see if our login is working
             Context context = getApplicationContext();
             CharSequence text = "Login successful";
